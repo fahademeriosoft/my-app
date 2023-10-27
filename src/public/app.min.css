@@ -272,21 +272,23 @@ body {
   opacity: 0;
   visibility: hidden;
   bottom: 20px;
-  text-align: center a;
-  text-align--webkit-transition: all 0.5s ease-out 0s;
-  text-align--moz-transition: all 0.5s ease-out 0s;
-  text-align--ms-transition: all 0.5s ease-out 0s;
-  text-align--o-transition: all 0.5s ease-out 0s;
-  text-align-transition: all 0.5s ease-out 0s;
-  text-align-background: #fff;
-  text-align-color: #292621;
-  text-align-width: 64px;
-  text-align-height: 50px;
-  text-align-display: inline-block;
-  text-align-font-size: 24px;
-  text-align-text-align: center;
-  text-align-line-height: 54px;
-  text-align-margin: -3px;
+  text-align: center;
+}
+.products .socal_icon a {
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  background: #fff;
+  color: #292621;
+  width: 64px;
+  height: 50px;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  line-height: 54px;
+  margin: -3px;
 }
 .products .socal_icon:hover {
   background: #FF2020;

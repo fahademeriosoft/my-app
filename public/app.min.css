@@ -182,6 +182,7 @@ body {
 .products .o-slider-product-tray__slide {
   list-style: none;
   position: relative;
+  text-align: center;
 }
 .products .o-slider-product-tray__controls {
   display: none;
@@ -245,10 +246,13 @@ body {
   height: 100%;
 }
 .products .c-product-tile__name {
-  font-size: 14px;
-  line-height: 1.7142857143;
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.products .c-product-tile__price {
+  font-size: 16px;
+  font-weight: 500;
 }
 .products .c-product-tile__promo {
   background-color: red;
@@ -259,6 +263,179 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+.products .socal_icon {
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  bottom: 20px;
+  text-align: center;
+}
+.products .socal_icon a {
+  -webkit-transition: all 0.5s ease-out 0s;
+  -moz-transition: all 0.5s ease-out 0s;
+  -ms-transition: all 0.5s ease-out 0s;
+  -o-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+  background: #fff;
+  color: #292621;
+  width: 64px;
+  height: 50px;
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  line-height: 54px;
+  margin: -3px;
+}
+.products .socal_icon:hover {
+  background: #FF2020;
+  color: #fff;
+}
+
+.testimonial {
+  background: #f3ead8;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.testimonial h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #292621;
+}
+.testimonial .testimonial-top-cap p {
+  line-height: 1.5;
+  padding: 0 200px;
+  margin-bottom: 32px;
+  font-size: 22px;
+  color: #292621;
+  font-weight: 400;
+}
+.testimonial .founder-text {
+  margin-left: 20px;
+  text-align: left;
+}
+.testimonial .founder-text span {
+  color: #292621;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+}
+.testimonial .founder-text p {
+  color: #74706b;
+  font-weight: 500;
+  line-height: 1.5;
+  padding: 0;
+  font-size: 16px;
+  margin: 0;
+}
+.testimonial .align-items-center {
+  align-items: center !important;
+}
+.testimonial .justify-content-center {
+  justify-content: center !important;
+}
+.testimonial .d-flex {
+  display: flex !important;
+}
+.testimonial .o-slider-product-tray__slide {
+  list-style: none;
+  position: relative;
+}
+.testimonial .o-slider-product-tray__controls {
+  display: none;
+}
+@media screen and (min-width: 900px) {
+  .testimonial .o-slider-product-tray__controls {
+    display: block;
+  }
+}
+.testimonial .o-slider-product-tray__button {
+  appearance: none;
+  border-width: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: -40px;
+  z-index: 9999;
+  position: absolute;
+  top: 57%;
+}
+.testimonial .o-slider-product-tray__button:focus {
+  outline: 0;
+}
+.testimonial .o-slider-product-tray__button[disabled] {
+  cursor: default;
+}
+.testimonial .o-slider-product-tray__arrow {
+  display: inline-block;
+  fill: #000;
+  height: 24px;
+  width: 24px;
+}
+.testimonial .o-slider-product-tray__arrow:hover {
+  fill: #222;
+}
+.o-slider-product-tray__button[disabled] .testimonial .o-slider-product-tray__arrow {
+  fill: #ddd;
+}
+.testimonial .o-slider-product-tray__arrow--next {
+  transform: scaleX(-1);
+}
+.testimonial .o-slider-product-tray__button--prev {
+  left: 245px;
+}
+.testimonial .o-slider-product-tray__button--next {
+  right: 245px;
+}
+
+.home-blog {
+  background: #F6F6F6;
+  padding-top: 80px;
+  padding-bottom: 29px;
+}
+.home-blog .mb-40 {
+  margin-bottom: 40px;
+}
+.home-blog .mb-30 {
+  margin-bottom: 30px;
+}
+.home-blog .single-blogs .blogs-cap span {
+  color: #74706B;
+  margin-bottom: 11px;
+  display: block;
+}
+.home-blog .single-blogs .blog-img {
+  margin-bottom: 25px;
+  width: 100%;
+}
+.home-blog .single-blogs img {
+  display: inherit;
+  -webkit-transition: all 0.4s ease-out 0s;
+  -moz-transition: all 0.4s ease-out 0s;
+  -ms-transition: all 0.4s ease-out 0s;
+  -o-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+  width: 100%;
+}
+.home-blog .section-tittle h2 {
+  font-size: 34px;
+  display: block;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 22px;
+}
+.home-blog .categories-area {
+  padding-top: 70px;
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=app.min.css.map */

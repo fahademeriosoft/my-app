@@ -11,11 +11,11 @@ const Testimonial = () => {
 
     const sliderRef = useRef(null);
 
-    const next = () => {
+    const nexts = () => {
         sliderRef.current.slickNext();
     };
 
-    const previous = () => {
+    const previouss = () => {
         sliderRef.current.slickPrev();
     };
 
@@ -23,18 +23,18 @@ const Testimonial = () => {
     const settings = {
         dots: false,
         arrows: false,
-        infinite: false,
+        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1
     };
 
     return (
-        <div className="testimonial">
+        <div className="testimonial" style={{background: "#f3ead8", paddingBottom: "80px", paddingTop: "80px"}}>
             <Container maxWidth="lg">
                 <Grid container spacing={1} sx={{ justifyContent: 'center' }}>
                     <Grid xs={10} md={10}>
                         <div className="o-slider-product-tray__controls js-controls">
-                            <button onClick={previous} className="slide-prev o-slider-product-tray__button o-slider-product-tray__button--prev">
+                            <button onClick={previouss} className="slide-prev o-slider-product-tray__button o-slider-product-tray__button--prev">
                                 <svg className="o-slider-product-tray__arrow o-slider-product-tray__arrow--prev"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="-44 40.7 11 21.1">
@@ -42,7 +42,7 @@ const Testimonial = () => {
                                 </svg>
                             </button>
 
-                            <button onClick={next} className="slide-next o-slider-product-tray__button o-slider-product-tray__button--next">
+                            <button onClick={nexts} className="slide-next o-slider-product-tray__button o-slider-product-tray__button--next">
                                 <svg className="o-slider-product-tray__arrow o-slider-product-tray__arrow--next"
                                     xmlns="http://www.w3.org/2000/svg"
                                     viewBox="-44 40.7 11 21.1">
@@ -52,8 +52,8 @@ const Testimonial = () => {
 
                         </div>
 
-                        <h2 className='text-center'>Customer Testimonial</h2>
-                        <Slider ref={sliderRef} {...settings} className="text-center">
+                        <h2 className='text-center' style={{textAlign: "center"}}>Customer Testimonial</h2>
+                        <Slider ref={sliderRef} {...settings} className="text-center" style={{textAlign: "center"}}>
                             <div class="single-testimonial text-center">
                                 <div class="testimonial-caption ">
                                     <div class="testimonial-top-cap">
@@ -62,7 +62,7 @@ const Testimonial = () => {
 
                                     <div class="testimonial-founder d-flex align-items-center justify-content-center">
                                         <div class="founder-img">
-                                            <img src="assets/img/gallery/founder-img.png" alt="" />
+                                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png.webp" alt="" />
                                         </div>
                                         <div class="founder-text">
                                             <span>Petey Cruiser</span>
@@ -79,7 +79,7 @@ const Testimonial = () => {
 
                                     <div class="testimonial-founder d-flex align-items-center justify-content-center">
                                         <div class="founder-img">
-                                            <img src="assets/img/gallery/founder-img.png" alt="" />
+                                            <img src="https://preview.colorlib.com/theme/capitalshop/assets/img/gallery/founder-img.png" alt="" />
                                         </div>
                                         <div class="founder-text">
                                             <span>Petey Cruiser</span>
